@@ -177,6 +177,8 @@
             var point = cirle.point, scale = cirle.scale, radius = 26;
             var w = h = (radius * scale);
             ctx.clearRect(point.x - w, point.y - h, 4 * w, 4 * h);
+            var audio = document.getElementById("myAudio");
+            audio.play();
         },
         hover: function(x, y) {
             var ctx = this.tree.ctx;
